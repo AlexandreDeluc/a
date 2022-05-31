@@ -4,6 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .backgroundImg {
@@ -51,6 +52,14 @@
     transition: 0.5s;
 }
 
+.footer {
+    margin-top: 100px;
+    background-color: grey;
+}
+
+.phone {
+    background-color: beige;
+}
 .main {
     margin-left: 300px;
 }
@@ -60,6 +69,7 @@
     padding: 60px;
     margin-right: 20px;
     background-color: #e5e6ea;
+    display: table-column;
 }
 
 .title {
@@ -70,18 +80,26 @@
 }
 
 .pop-up {
+    display: table-column;
     position: absolute;
     margin-bottom: 200px;
-    padding-right: 500px;
     bottom: 0;
     background-color: #da1437;
     margin-left: 400px;
 }
 
 .pop-up2 {
-    
+    position: absolute;
+    bottom: 0;
+    background-color: #e5e6ea;
+    margin-left: 400px;
 }
 
-.main .pop-up h1, h2 {
+.main .pop-up2 h2, h4 {
+    color: black;
+    margin: 20px;
+}
+
+.main .pop-up h2, h3 {
     color: white;
 }
