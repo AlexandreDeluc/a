@@ -5,17 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mgs</title>
-    <link rel="stylesheet" type="text/css" href="D:\Documents\Bureau\a\style\style.css">
+    <link rel="stylesheet" type="text/css" href="D:\Documents\Bureau\coding-challenge\style\style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
 <body>
-    <div class="backgroundImg">
-        <img src="D:\Documents\Bureau\a\assets\background.jpg"></img>
+    <div class="img-slider">
+        <div class="slide active">
+            <img src="assets\background.jpg">
+        </div>
+        <div class="slide">
+            <img src="assets\background2.jpg">
+        </div>
+        <div class="slide">
+            <img src="assets\background3.jpg">
+        </div>
+        <div class="navigation">
+            <div class="button active"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+        </div>
     </div>
     <nav class="side-nav">
         <div class="wrapper">
-            <img id="logo" src="D:\Documents\Bureau\a\assets\brand_logo.png">
+            <img id="logo" src="D:\Documents\Bureau\coding-challenge\assets\brand_logo.png">
             <div class="nav-bloc">
                 <a>Accueil</a>
             </div>
@@ -66,17 +80,31 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer">
-                <div class="contact">
-                    <h5>254 chemin de la Farlède</h5>
-                    <h5>83500, La Seyne Sur Mer</h5>
-                </div>
-                <div class="phone">
-                    <h6>0494151738</h6>
-                </div>   
-            </div>
         </div>
-    </div>
+        <div class="nav-footer">
+            <div class="adresse">
+                <h5>254 chemin de la Farlède</h5>
+                <h5>83500, La Seyne Sur Mer</h5> 
+            </div>
+            <div class="contact">
+                <div class="elements">
+                    
+                    <div class="phone">
+                        <i class="fa fa-phone"></i>
+                        <p>0494151738</p>
+                    </div>
+                    <div class="map">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="mail">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="flag">
+                        <i class="fa fa-flag"></i>
+                    </div>       
+                </div>
+            </div>   
+        </div>
     </nav>
     <main>
         <div class="reservation-box">
@@ -88,16 +116,17 @@
             </div>
         </div>
         <div class="pop-up">
-            <div class="popup1">
+            <div id="popup1" onclick="moveToRight()">
                 <h2>-10% sur nos chambres</h2>
                 <p class="soustitre1">Pendant tout le mois de juillet</p>
             </div>
             
-            <div class="popup2">
+            <div id="popup2">
                 <h3>Locations et spa à Bandol</h3>
                 <p class="soustitre2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod totam quas voluptate suscipit in ipsum nesciunt vel sunt quibusdam distinctio? Qui quo repellendus velit tempore, vitae quisquam iste placeat corrupti!</p>
             </div>
         </div>
     </main>
+    <script src="js/annimations.js"></script>
 </body>
 </html>

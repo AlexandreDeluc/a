@@ -9,12 +9,63 @@
 
 /* Background */
 
-.backgroundImg {
+body {
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+
+}
+
+.img-slider {
+    height: 100vh;
     position: fixed;
-    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.img-slider .slide {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    
+}
+
+.img-slider .slide.active {
+    
+    opacity: 1;
+    transition: 2s;
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.img-slider .navigation {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    top: 20px;
+    left: 800px;
+    transform: translateX(-50%);
+}
+
+.img-slider .navigation .button {
+    background: #ffffff;
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img-slider .navigation .button.active {
+    background: #da1437;
 }
 
 .side-nav {
@@ -78,13 +129,11 @@
 
 /* Info */
 
-.footer {
+.nav-footer {
     position: absolute;
     bottom: 0;
-    text-align: center;
-    padding: 10px;
-    background: #666666;
-    width: 300px
+    min-height: 100px;
+    width: 100%;
 }
 
 /* Reservation */
@@ -118,29 +167,29 @@
     margin-left: 800px;
 }
 
-.popup1 {
+#popup1 {
     background: #da1437;
     margin-bottom: 20px;
     padding: 15px;
 }
 
-.popup1 h2, .soustitre1{
+#popup1 h2, .soustitre1{
     color: white;
 }
 
-.popup1 h2 {
+#popup1 h2 {
     text-transform: uppercase;
 }
 
-.popup2 {
+#popup2 {
     background: #e5e6ea;
     padding: 15px;
 }
 
-.popup2 h3 {
+#popup2 h3 {
     margin-bottom: 15px;
 }
 
-.popup2 .soustitre2 {
+#popup2 .soustitre2 {
     font-size: small;
 }
